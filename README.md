@@ -1,5 +1,5 @@
 ### YOLOv4-Darknet-TensorRT
-### 1. Training in Darknet
+### 1 Training in Darknet
 ### 1.1 Download Darknet
 ```
 git clone https://github.com/AlexeyAB/darknet
