@@ -194,3 +194,17 @@ Saving weights to /home/laitathei/Desktop/darknet/backup//yolov4-tiny_final.weig
 If you want to train from the beginning, then use flag in the end of training command: -clear
 ```
 
+### 1.10 Inference with C++
+```
+# YOLOv4-tiny image
+./darknet detector test ./cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights data/dog.jpg
+```
+
+### 1.11 Inference with Python
+```
+# YOLOv4-tiny Video
+python3 darknet_video.py --input /home/laitathei/Desktop/video_camera_color_image_raw.mp4 --out_filename /home/laitathei/Desktop/results1.mp4 --weights backup/yolov4-tiny_last.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file VOCdevkit/voc.data --thresh 0.6
+
+# YOLOv4-tiny image
+python3 darknet_images.py --input /home/laitathei/Desktop/darknet/data/dog.jpg --weights yolov4-tiny.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file cfg/coco.data --thresh 0.6
+```
