@@ -135,7 +135,15 @@ beta_nms=0.6
 #scale_x_y = 2.0
 ```
 
-### 1.7 Data folder structure
+### 1.7 Download YOLO weight
+```
+# YOLOv4-tiny
+wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
+# YOLOv4
+wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
+```
+
+### 1.8 Data folder structure
 ```
 ├── VOCdevkit
    ├── VOC2007
@@ -170,7 +178,7 @@ beta_nms=0.6
    └── yolov4-tiny.cfg
 ```
 
-### 1.8 Training
+### 1.9 Training
 ```
 cd..
 ./darknet partial cfg/yolov4-tiny.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29
