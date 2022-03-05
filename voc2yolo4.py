@@ -5,8 +5,8 @@ random.seed(0)
 xmlfilepath=r'./Annotations'
 saveBasePath=r"./ImageSets/Main/"
  
-trainval_percent=1
-train_percent=1
+trainval_percent=0.8
+train_percent=0.9
 
 temp_xml = os.listdir(xmlfilepath)
 total_xml = []
