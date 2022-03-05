@@ -183,4 +183,14 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
 cd..
 ./darknet partial cfg/yolov4-tiny.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29
 ./darknet detector train VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg yolov4-tiny.conv.29
+
+## Below content will show if program success
+ Tensor Cores are used.
+
+ 6000: 0.062273, 0.062858 avg loss, 0.000026 rate, 0.380254 seconds, 384000 images, 0.010664 hours left
+Saving weights to /home/laitathei/Desktop/darknet/backup//yolov4-tiny_6000.weights
+Saving weights to /home/laitathei/Desktop/darknet/backup//yolov4-tiny_last.weights
+Saving weights to /home/laitathei/Desktop/darknet/backup//yolov4-tiny_final.weights
+If you want to train from the beginning, then use flag in the end of training command: -clear
 ```
+
