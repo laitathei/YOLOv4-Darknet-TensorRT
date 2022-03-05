@@ -46,8 +46,10 @@ mkdir Main
 
 ### 1.4 Seperate dataset to train,test,val and Change the VOC format to YOLO format
 ```
+mv /home/laitathei/Desktop/darknet/voc2yolo4.py /home/laitathei/Desktop/darknet/VOCdevkit/VOC2007
 cd /home/laitathei/Desktop/darknet/VOCdevkit/VOC2007
 python3 voc2yolo4.py
+mv /home/laitathei/Desktop/darknet/voc_annotation.py /home/laitathei/Desktop/darknet/VOCdevkit
 cd /home/laitathei/Desktop/darknet/VOCdevkit
 python3 voc_annotation.py
 ```
