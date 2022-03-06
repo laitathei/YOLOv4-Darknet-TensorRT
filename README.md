@@ -247,6 +247,8 @@ pip3 install numpy
 pip3 install Cython
 pip3 install pycuda --user
 pip3 install onnx==1.4.1
+
+git clone https://github.com/jkjung-avt/tensorrt_demos
 ```
 
 ### 2.2 Convert Darknet model to ONNX
