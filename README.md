@@ -266,5 +266,15 @@ Done.
 
 ### 2.3 Convert ONNX to TensorRT
 ```
+python3 onnx_to_tensorrt.py -m yolov4-tiny_last
 
+## Below content will show if program success
+Completed creating engine.
+Serialized the TensorRT engine to file: yolov4-tiny_last.trt
+```
+
+### 2.4 Inference with Python
+```
+# YOLOv4-tiny webcam
+python3 trt_yolo.py --usb 0 -m yolov4_tiny-416
 ```
