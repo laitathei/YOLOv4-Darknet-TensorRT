@@ -168,14 +168,14 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
        │   ├── xxx.jpg
        |   ├──   ...
        │   
-       ├── voc2yolo4.py
+       └── voc2yolo4.py
    ├── 2007_train.txt
    ├── 2007_test.txt
-   └── 2007_valid.txt
+   ├── 2007_valid.txt
    ├── train.all.txt
-   └── train.txt
+   ├── train.txt
    ├── voc.data
-   └── voc.names
+   ├── voc.names
    ├── voc_annotation.py
    └── yolov4-tiny.cfg
 ```
