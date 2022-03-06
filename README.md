@@ -230,3 +230,8 @@ python3 darknet_video.py --input /home/laitathei/Desktop/video_camera_color_imag
 # YOLOv4-tiny Image
 python3 darknet_images.py --input /home/laitathei/Desktop/darknet/data/dog.jpg --weights yolov4-tiny.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file cfg/coco.data
 ```
+
+### 1.13 Inference with ROS, Realsense, Python
+```
+python3 inference_ros.py --weights backup/yolov4-tiny_last.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file VOCdevkit/voc.data
+```
