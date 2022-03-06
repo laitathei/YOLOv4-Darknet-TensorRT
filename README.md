@@ -199,6 +199,18 @@ If you want to train from the beginning, then use flag in the end of training co
 ### 1.10 Evaluates Trained weight performance
 ```
 ./darknet detector map VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg backup/yolov4-tiny_last.weights
+
+## Below content will show if program success
+class_id = 0, name = obstacle, ap = 0.00%   	 (TP = 0, FP = 0) 
+class_id = 1, name = human, ap = 34.97%   	 (TP = 239, FP = 2) 
+class_id = 2, name = injury, ap = 34.86%   	 (TP = 41, FP = 0) 
+
+ for conf_thresh = 0.25, precision = 0.99, recall = 0.29, F1-score = 0.44 
+ for conf_thresh = 0.25, TP = 280, FP = 2, FN = 698, average IoU = 83.42 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.232763, or 23.28 % 
+Total Detection Time: 3 Seconds
 ```
 
 ### 1.11 Inference with C++
