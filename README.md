@@ -248,3 +248,23 @@ pip3 install Cython
 pip3 install pycuda --user
 pip3 install onnx==1.4.1
 ```
+
+### 2.2 Convert Darknet model to ONNX
+```
+cd /home/laitathei/Desktop/tensorrt_demos/plugins
+make
+cd /home/laitathei/Desktop/tensorrt_demos/yolo
+cp /home/laitathei/Desktop/darknet/backup/yolov4-tiny_last.weights /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.weights
+cp /home/laitathei/Desktop//darknet/VOCdevkit/yolov4-tiny.cfg /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.cfg
+python3 yolo_to_onnx.py -m yolov4-tiny_last
+
+## Below content will show if program success
+Checking ONNX model...
+Saving ONNX file...
+Done.
+```
+
+### 2.3 Convert ONNX to TensorRT
+```
+
+```
