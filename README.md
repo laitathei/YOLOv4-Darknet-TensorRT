@@ -276,5 +276,5 @@ Serialized the TensorRT engine to file: yolov4-tiny_last.trt
 ### 2.4 Inference with Python
 ```
 # YOLOv4-tiny webcam
-python3 trt_yolo.py --usb 0 -m yolov4_tiny-416
+python3 trt_yolo.py --usb 0 -m yolov4-tiny_last
 ```
