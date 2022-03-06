@@ -235,3 +235,16 @@ python3 darknet_images.py --input /home/laitathei/Desktop/darknet/data/dog.jpg -
 ```
 python3 inference_ros.py --weights backup/yolov4-tiny_last.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file VOCdevkit/voc.data
 ```
+
+### 2 TensorRT conversion
+### 2.1 Download dependency
+```
+sudo apt-get update
+sudo apt-get install -y build-essential libatlas-base-dev
+sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get install python3-pip
+pip3 install numpy
+pip3 install Cython
+pip3 install pycuda --user
+pip3 install onnx==1.4.1
+```
