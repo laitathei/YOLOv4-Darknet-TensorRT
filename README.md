@@ -278,3 +278,9 @@ Serialized the TensorRT engine to file: yolov4-tiny_last.trt
 # YOLOv4-tiny webcam
 python3 trt_yolo.py --usb 0 -m yolov4-tiny_last
 ```
+
+### 2.5 Inference with ROS, Realsense, Python
+```
+# YOLOv4-tiny
+python3 inference_ros_trt.py -m yolov4-tiny_last
+```
