@@ -1,11 +1,11 @@
 ### YOLOv4-Darknet-TensorRT
 ### 1 Training in Darknet
-### 1.1 Download Darknet
+### 1.1 Download YOLOv4-Darknet
 ```
 git clone https://github.com/AlexeyAB/darknet
 ```
 
-### 1.2 Change Darknet configuration
+### 1.2 Change YOLOv4-Darknet configuration
 ```
 cd darknet/
 gedit Makefile
