@@ -64,7 +64,7 @@ human
 injury
 ```
 
-### 1.5 Change ```voc.data``` setting
+### 1.6 Change ```voc.data``` setting
 ```
 cp /home/laitathei/Desktop/darknet/cfg/voc.data /home/laitathei/Desktop/darknet/VOCdevkit
 gedit voc.data
@@ -76,7 +76,7 @@ names = /home/laitathei/Desktop/darknet/VOCdevkit/voc.names
 backup = /home/laitathei/Desktop/darknet/backup/
 ```
 
-### 1.6 Change ```yolov4-tiny.cfg``` setting, Remember change [convolutional] & [yolo] in line 226 and 270
+### 1.7 Change ```yolov4-tiny.cfg``` setting, Remember change [convolutional] & [yolo] in line 226 and 270
 ```
 cp /home/laitathei/Desktop/darknet/cfg/yolov4-tiny.cfg /home/laitathei/Desktop/darknet/VOCdevkit
 gedit yolov4-tiny.cfg
@@ -135,7 +135,7 @@ beta_nms=0.6
 #scale_x_y = 2.0
 ```
 
-### 1.7 Download YOLO weight
+### 1.8 Download YOLO weight
 ```
 # YOLOv4-tiny
 wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
@@ -145,7 +145,7 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
 wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 ```
 
-### 1.8 Data folder structure
+### 1.9 Data folder structure
 ```
 ├── VOCdevkit
    ├── VOC2007
@@ -180,7 +180,7 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
    └── yolov4-tiny.cfg
 ```
 
-### 1.9 Training
+### 1.10 Training
 ```
 cd..
 ./darknet partial cfg/yolov4-tiny.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29    # optional
@@ -196,7 +196,7 @@ Saving weights to /home/laitathei/Desktop/darknet/backup//yolov4-tiny_final.weig
 If you want to train from the beginning, then use flag in the end of training command: -clear
 ```
 
-### 1.10 Evaluates Trained weight performance
+### 1.11 Evaluates Trained weight performance
 ```
 ./darknet detector map VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg backup/yolov4-tiny_last.weights
 
@@ -213,7 +213,7 @@ class_id = 2, name = injury, ap = 34.86%   	 (TP = 41, FP = 0)
 Total Detection Time: 3 Seconds
 ```
 
-### 1.11 Inference with C++
+### 1.12 Inference with C++
 ```
 # YOLOv4-tiny Video
 ./darknet detector demo VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg backup/yolov4-tiny_last.weights /home/laitathei/Desktop/video_camera_color_image_raw.mp4 -out_filename /home/laitathei/Desktop/results1.mp4
@@ -222,7 +222,7 @@ Total Detection Time: 3 Seconds
 ./darknet detector test ./cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights data/dog.jpg
 ```
 
-### 1.12 Inference with Python
+### 1.13 Inference with Python
 ```
 # YOLOv4-tiny Video
 python3 darknet_video.py --input /home/laitathei/Desktop/video_camera_color_image_raw.mp4 --out_filename /home/laitathei/Desktop/results1.mp4 --weights backup/yolov4-tiny_last.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file VOCdevkit/voc.data
@@ -231,7 +231,7 @@ python3 darknet_video.py --input /home/laitathei/Desktop/video_camera_color_imag
 python3 darknet_images.py --input /home/laitathei/Desktop/darknet/data/dog.jpg --weights yolov4-tiny.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file cfg/coco.data
 ```
 
-### 1.13 Inference with ROS, Realsense, Python
+### 1.14 Inference with ROS, Realsense, Python
 ```
 python3 inference_ros.py --weights backup/yolov4-tiny_last.weights --config_file VOCdevkit/yolov4-tiny.cfg --data_file VOCdevkit/voc.data
 ```
