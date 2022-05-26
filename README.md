@@ -183,8 +183,7 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
 ### 1.10 Training
 ```
 cd..
-./darknet partial VOCdevkit/yolov4-tiny.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29    # optional
-./darknet detector train VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg yolov4-tiny.conv.29
+./darknet detector train VOCdevkit/voc.data VOCdevkit/yolov4-tiny.cfg yolov4-tiny.conv.29 -map
 
 ## Below content will show if program success
  Tensor Cores are used.
