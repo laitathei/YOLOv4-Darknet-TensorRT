@@ -263,6 +263,9 @@ sudo apt-get install -y build-essential python3-dev
 sudo apt-get install -y libboost-python-dev libboost-thread-dev
 sudo pip3 install setuptools
 pip3 install -U protobuf
+*** If python3 yolo_to_onnx.py -m yolov4-tiny_last have Illegal instruction (core dumped), do following step ***
+*** echo "export OPENBLAS_CORETYPE=ARMV8" >> ~/.bashrc ***
+*** source ~/.bashrc ***
 python3 yolo_to_onnx.py -m yolov4-tiny_last
 
 ## Below content will show if program success
