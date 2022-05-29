@@ -245,6 +245,8 @@ sudo apt-get install python3-pip
 pip3 install numpy
 pip3 install Cython
 pip3 install pycuda --user
+***When install the onnx, please check which version are required from tensorrt_demos***
+***The requirement.txt is located in tensorrt_demos/yolo***
 pip3 install onnx==1.4.1
 
 git clone https://github.com/jkjung-avt/tensorrt_demos
