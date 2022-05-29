@@ -259,6 +259,9 @@ make
 cd /home/laitathei/Desktop/tensorrt_demos/yolo
 cp /home/laitathei/Desktop/darknet/backup/yolov4-tiny_last.weights /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.weights
 cp /home/laitathei/Desktop//darknet/VOCdevkit/yolov4-tiny.cfg /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.cfg
+sudo apt-get install -y build-essential python3-dev
+sudo apt-get install -y libboost-python-dev libboost-thread-dev
+sudo pip3 install setuptools
 pip3 install -U protobuf
 python3 yolo_to_onnx.py -m yolov4-tiny_last
 
