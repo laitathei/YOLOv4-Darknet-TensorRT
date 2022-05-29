@@ -257,6 +257,7 @@ make
 cd /home/laitathei/Desktop/tensorrt_demos/yolo
 cp /home/laitathei/Desktop/darknet/backup/yolov4-tiny_last.weights /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.weights
 cp /home/laitathei/Desktop//darknet/VOCdevkit/yolov4-tiny.cfg /home/laitathei/Desktop/tensorrt_demos/yolo/yolov4-tiny_last.cfg
+pip3 install -U protobuf
 python3 yolo_to_onnx.py -m yolov4-tiny_last
 
 ## Below content will show if program success
